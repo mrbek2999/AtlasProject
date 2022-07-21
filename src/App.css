@@ -1,38 +1,309 @@
-.App {
-  text-align: center;
+*{
+  text-decoration: none!important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.siteNav header{
+  padding: 26px 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.siteNav .site-menu ul{
+  display: flex;
+  align-items: center;
+  margin: 0!important;
+  list-style: none;
+}
+.siteNav .site-menu ul li{
+  padding: 0 16px;
+}
+.siteNav .site-menu ul li a{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #313131;
+  display: block;
+}
+.siteNav .site-menu ul li.download-link a{
+  background: #FD6D61;
+  box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding: 16px 30px;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.navigate-to-atlas{
+  display: flex;
+  align-items: center;
+}
+.navigate-to-atlas .row{
+  width: 100%;
+  position: relative;
+}
+.navigate-to-atlas .text-navigate h1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 78px;
+  line-height: 80px;
+  letter-spacing: -0.05em;
+  color: #313131;
+  padding-bottom: 25px;
+}
+.navigate-to-atlas .text-navigate h1 span{
+  color: #F96C61;
+}
+.navigate-to-atlas .text-navigate p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #313131;
+}
+.navigate-btn{
+  display: inline-block;
+  margin-top: 50px;
+  padding: 19px 24px;
+  background: #FD6D61;
+  box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.navigate-btn img{
+  padding-right: 20px;
+}
+
+.photo-navigate{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -50px!important;
+  justify-content: flex-end;
+}
+.photo-navigate .row{
+  margin-right: -70px;
+}
+.photo-navigate .col-lg-6:nth-child(2n-1){
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.photo-navigate .photo-block img{
+  width: 100%;
+  object-fit: contain;
+}
+.photo-navigate .photo-block-1{
+  width: 100%;
+}
+.photo-navigate .photo-block-2{
+  padding-top: 50px;
+  margin-left: -20px;
+}
+.photo-navigate .photo-block-3{
+  padding-right: 20px;
+  margin-top: -20px;
+  align-self: flex-start;
+}
+
+.photo-navigate .abs-photo{
+  position: absolute;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.photo-navigate .abs-photo .photo-block-5{
+  width: 220px;
+}
+.bg-border{
+  height: calc(100vh - 101px);
+  background: url("./files/images/border-main-bg.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: -20px -140px;
+  display: flex;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.restaurants{
+  background: url("./files/images/CTA.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title-section h2{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 80px;
+  color: #222222;
+  text-align: center;
+  padding: 25px 0 60px;
+  margin-bottom: 0;
+}
+.title-section h2:after{
+  content: '';
+  width: 120px;
+  height: 6px;
+  background-color: #FD6D61;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: flex;
+}
+.restaurants-block .col-lg-4 .card-image img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.restaurants-block{
+  padding: 50px 0 0;
+}
+.restaurants-block .row .col-lg-4{
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.restaurants-block .row .col-lg-4:nth-child(2n){
+  margin-top: -65px;
+}
+.restaurants-block .row .col-lg-4:nth-child(2n-1){
+  margin-bottom: -15px;
+}
+.restaurants-block .col-lg-4 .card{
+  background-color: white;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 0;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+.restaurants-block .col-lg-4 .card-body{
+  padding: 18px 20px 24px;
+}
+.restaurants-block .card-image{
+  background-color: black;
+}
+.restaurants-block .card-image img{
+  opacity: .54;
+}
+.restaurants-block .card-btn{
+  display: flex;
+}
+.restaurants-block .card p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  color: #2F2F2F;
+  margin-bottom: 8px;
+}
+.restaurants-block .card-btn a{
+  margin-top: 8px;
+  padding: 5px 22px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #693DE7;
+  border: 0.973837px solid #B2B2B2;
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nearbies .card{
+  border: 0;
+  background-color: white;
+}
+.nearbies .card-image{
+  border: 0;
+  background-color: #F4F1FF;
+  width:101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 10px;
+  transition: all ease .3s;
+}
+.nearbies .card-image svg{
+  fill: #693DE7;
+}
+
+.nearbies .card-body{
+  padding: 0;
+}
+.nearbies .card-title{
+  margin-bottom: 0;
+}
+.nearbies .card-title h3{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #2D3436;
+  padding: 28px 0;
+  margin: 0;
+}
+.nearbies .card-title p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #2D3436;
+  margin-bottom: 28px;
+}
+.nearbies .card-btn a{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FD6D61;
+  display: flex;
+  align-items: center;
+}
+.nearbies .card-btn svg{
+  fill: #FD6D61;
+  margin-left: 8px;
+  transition: all ease .3s;
+}
+.nearbies .card:hover .card-image{
+  background: #693DE7;
+  box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+}
+.nearbies .card:hover .card-image svg{
+  fill: #FFFFFF;
+}
+.nearbies .card:hover .card-btn svg{
+  margin-left: 16px;
+}
+.nearbies .row{
+  padding: 80px 0;
+}
+.nearby-block .title-section h2{
+  padding-bottom: 30px;
+  margin-bottom: 0;
 }
