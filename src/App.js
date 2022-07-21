@@ -5,7 +5,10 @@ import NavigatePng2 from './files/images/navigate4.png'
 import NavigatePng3 from './files/images/navigate3.png'
 import NavigatePng4 from './files/images/navigate2.png'
 import NavigatePng5 from './files/images/navigate5.png'
+import about1 from './files/images/about1.jpg'
+import about2 from './files/images/about2.png'
 import restaurant from './files/images/restaurant.jpg'
+import gym from './files/images/gym.jpg'
 import {ReactComponent as Nearby1} from './files/images/nearby1.svg'
 import {ReactComponent as Nearby2} from './files/images/nearby2.svg'
 import {ReactComponent as Nearby3} from './files/images/nearby3.svg'
@@ -192,6 +195,122 @@ function App() {
                                 </div>
                                 <div className="card-btn">
                                     <Link to={'/'}>Checkout <span><Arrow_nearby/></span></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className={'about'}>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div className="title-about">
+                            <h3>Hackathons to watch
+                                out for</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a
+                                pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.
+                                Nisi,
+                                risus in suscipit non. Non commodo volutpat, pharetra, vel.</p>
+                            <div className="card-btn">
+                                <Link to={'/'}>Checkout <span><Arrow_nearby/></span></Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="images">
+                            <img src={about1} alt="About 1"/>
+                            <img src={about2} alt="About 2"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div className="images">
+                            <img src={about1} alt="About 1"/>
+                            <img src={about2} alt="About 2"/>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="title-about">
+                            <h3>Take a weekend off</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a
+                                pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.
+                                Nisi,
+                                risus in suscipit non. Non commodo volutpat, pharetra, vel.</p>
+                            <div className="card-btn">
+                                <Link to={'/'}>Checkout <span><Arrow_nearby/></span></Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className={'download-to-app'}>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <h3>Take your Atlas with
+                            your mobile phone
+                            Donwload Atlas App now</h3>
+                        <Link to={'/'} className={'navigate-btn'}><img src={LogoPlayMarket} alt="LogoPlayMarket"/>Downlaod
+                            App Now</Link>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section className={'gymnasium'}>
+            <div className="title-section">
+                <h2>Gymnasium</h2>
+            </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="card">
+                            <div className="card-image">
+                                <img src={gym} alt="img-card"/>
+                            </div>
+                            <div className="card-body">
+                                <div className="card-detail">
+                                    <h3>XYZ Gym</h3>
+                                    <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet</p>
+                                </div>
+                                <div className="card-btn">
+                                    <Link to={'/'}>Explore</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="card">
+                            <div className="card-image">
+                                <img src={gym} alt="img-card"/>
+                            </div>
+                            <div className="card-body">
+                                <div className="card-detail">
+                                    <h3>XYZ Gym</h3>
+                                    <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet</p>
+                                </div>
+                                <div className="card-btn">
+                                    <Link to={'/'}>Explore</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="card">
+                            <div className="card-image">
+                                <img src={gym} alt="img-card"/>
+                            </div>
+                            <div className="card-body">
+                                <div className="card-detail">
+                                    <h3>XYZ Gym</h3>
+                                    <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet</p>
+                                </div>
+                                <div className="card-btn">
+                                    <Link to={'/'}>Explore</Link>
                                 </div>
                             </div>
                         </div>

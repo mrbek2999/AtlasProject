@@ -71,7 +71,9 @@
   color: #313131;
 }
 .navigate-btn{
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  width: fit-content;
   margin-top: 50px;
   padding: 19px 24px;
   background: #FD6D61;
@@ -83,6 +85,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  transition: all .2s;
 }
 .navigate-btn img{
   padding-right: 20px;
@@ -240,7 +243,7 @@
   justify-content: center;
   padding: 25px;
   border-radius: 10px;
-  transition: all ease .3s;
+  transition: all ease .2s;
 }
 .nearbies .card-image svg{
   fill: #693DE7;
@@ -274,7 +277,7 @@
   color: #2D3436;
   margin-bottom: 28px;
 }
-.nearbies .card-btn a{
+.nearbies .card-btn a, .about .card-btn a{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -284,10 +287,10 @@
   display: flex;
   align-items: center;
 }
-.nearbies .card-btn svg{
+.nearbies .card-btn svg, .about .card-btn svg{
   fill: #FD6D61;
   margin-left: 8px;
-  transition: all ease .3s;
+  transition: all .2s;
 }
 .nearbies .card:hover .card-image{
   background: #693DE7;
@@ -297,8 +300,12 @@
 .nearbies .card:hover .card-image svg{
   fill: #FFFFFF;
 }
-.nearbies .card:hover .card-btn svg{
+.nearbies .card:hover .card-btn a, .about .col-lg-6:hover .card-btn a{
+  color: #693DE7;
+}
+.nearbies .card:hover .card-btn svg, .about .col-lg-6:hover .card-btn svg{
   margin-left: 16px;
+  fill: #693DE7;
 }
 .nearbies .row{
   padding: 80px 0;
@@ -306,4 +313,162 @@
 .nearby-block .title-section h2{
   padding-bottom: 30px;
   margin-bottom: 0;
+}
+
+.about .row{
+  padding: 80px;
+}
+.about .row .col-lg-6{
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.about .col-lg-6 .title-about h3{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  font-feature-settings: 'salt' on, 'liga' off;
+  color: #252525;
+  margin-bottom: 25px;
+}
+.about .col-lg-6 .title-about p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 32px;  color: #262626;
+  margin-bottom: 25px
+}
+.about .images{
+  position: relative;
+}
+.about .images img:first-child {
+  margin-bottom: 50px;
+}
+.about .images img:last-child{
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+}
+
+.download-to-app{
+  position: relative;
+  background: url("./files/images/CTA1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.download-to-app .row{
+  padding: 0 100px;
+}
+.download-to-app .container{
+  padding: 100px;
+}
+.download-to-app h3{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 138.7%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  color: #313131;
+}
+.navigate-btn:hover{
+  background-color: #693DE7;
+  color: white;
+}
+.download-to-app:after{
+  content: "";
+  background: url("files/images/dots.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0;
+  width: 20%;
+  background-position: left bottom;
+  bottom: 0;
+  height: 100%;
+}
+.gymnasium{
+  padding: 100px 0;
+}
+.gymnasium .row{
+  padding: 100px 130px;
+}
+.gymnasium .row .col-lg-4{
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.gymnasium .title-section h2{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.gymnasium .card{
+  border: 0;
+  box-shadow: 0px 14.1088px 21.8686px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.gymnasium .card .card-body{
+  position: absolute;
+  display: flex;
+  align-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,62%);
+  color: white;
+  padding: 45px 28px 28px;
+}
+.gymnasium .card .card-body p{
+  padding-top: 120px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+  width: 80%;
+}
+.gymnasium .card h3{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+.gymnasium .card-btn{
+  bottom: 0;
+  color: white;
+  background: rgba(105, 61, 231, 0.18);
+  border: 0.973837px solid #B2B2B2;
+  padding: 6px 22px;
+  border-radius: 6px;
+}
+.gymnasium .card-btn a{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9.73837px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.gymnasium .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gymnasium .card-image{
+  height: 350px;
 }
